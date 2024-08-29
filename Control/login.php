@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$dados = file_get_contents('http://localhost/apicold/postUser/'.$_POST['nick'].'/'.$_POST['senha']);
+$dados = file_get_contents('http://localhost/apicold/getUser/'.$_POST['nick'].'/'.$_POST['senha']);
 $dados = json_decode($dados, true);
 try{
     if (is_array($dados)) {
