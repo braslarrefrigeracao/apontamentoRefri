@@ -17,6 +17,7 @@ $_SESSION['ice']['titulo']='Braslar Refrigeração- Apontamento - Login';
          $script.=$_SESSION['ice']['mensagem'];
          $script.="')";
          $script.="</script>";
+         echo $script;
    
         }
         unset($_SESSION['ice']['erro']);
